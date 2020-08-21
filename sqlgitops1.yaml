@@ -5,14 +5,14 @@ data:
 kind: Secret
 metadata:
   name: sqlgitops1-login-secret
-  namespace: mysqltest
+  namespace: azure-arcdata
 type: Opaque
 ---
 apiVersion: sql.arcdata.microsoft.com/v1alpha1
 kind: sqlmanagedinstance
 metadata:
   name: sqlgitops1
-  namespace: mysqltest
+  namespace: azure-arcdata
 spec:
   limits:
     vcores: 4
